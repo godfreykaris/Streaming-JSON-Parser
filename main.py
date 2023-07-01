@@ -8,7 +8,7 @@ class Task(BaseModel):
 
 
 def json_chunks(json_string):
-    #We split by a reasonable chunk size.
+    #Split by a reasonable chunk size.
     chunk_size = 5  # You can adjust this value depending on your actual use case.
     for i in range(0, len(json_string), chunk_size):
         chunk = json_string[i:i+chunk_size]
